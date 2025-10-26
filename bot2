@@ -3,6 +3,9 @@ import random
 from discord.ext import commands
 from bot_logic import gen_pass
 from settings import settings
+from bot_logic import chiste
+from bot_logic import flip_coin
+from bot_logic import gen_emodji
 
 
 intents = discord.Intents.default()
@@ -17,6 +20,22 @@ async def hello(ctx):
 @bot.command()
 async def pasw(ctx):
     await ctx.send(gen_pass(10))
+
+@bot.command()
+async def emoji(ctx):
+    await ctx.send(gen_emodji())
+
+@bot.command()
+async def moneda(ctx):
+    await ctx.send(flip_coin())
+
+#@bot.command()
+#async def chiste(ctx):
+    #await ctx.send(chiste())
+
+@bot.command()
+async def contar_chiste(ctx): # <-- Cambia el nombre aquí
+    await ctx.send(chiste())
 
 @bot.command()
 async def joined(ctx, member: discord.Member):
