@@ -1,0 +1,1 @@
+Carperta de archivos que contendra fundamentos intermedios, uso de bibliotecas intermedias y comandos básicos

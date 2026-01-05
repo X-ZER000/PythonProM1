@@ -1,0 +1,1 @@
+carpeta de archivos que contendra apuntes y documentación de mi estudio en python
